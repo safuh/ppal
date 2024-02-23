@@ -1,0 +1,68 @@
+{% block customlink %}
+<li><a class="getstarted scrollto" href="/guides">Guide</a></li>
+{% endblock %}
+{%block body %}
+
+<section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/home">Home</a></li>
+          <li>Basic Plan</li>
+        </ol>
+        <h2>Checkout to Subscribe</h2>
+
+      </div>
+</section><!-- End Breadcrumbs -->
+
+{% block content %}
+<section class="inner-page">
+      <div class="container">
+        <!-- Masthead-->
+<!--======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row d-block">
+
+          <div class="col-lg-12 justify-content-center d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="box featured">
+              <h3>Basic Plan</h3>
+              <h4><sup>$</sup>6<span>per month</span></h4>
+              <h5>Language Modeling</h5>
+              <ul>
+                <li><i class="bx bx-check"></i> AutoCompletion</li>
+                <li><i class="bx bx-check"></i> Spell Checking</li>
+                <li><i class="bx bx-check"></i> POS tagging</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Lemmatization</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Next word generation</span></li>
+              </ul>
+              <div id="paypal-button-container-P-40J68497JD854125YMROAWYA"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AXS9Zcv3VjxcHYyjgHncx7s9es36TEZKaXHW8sFmeVZmAME1R0zKM8Md2gyd7X5Y4_GL0Qbuxq_uVrdZ&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+{% csrf_token %}
+{%load static %}
+  
+  <script src="{% static 'js/bscCheckout.js'%}"></script>
+         
+            </div>
+          </div>
+
+        </div>
+        <div class="row d-none" id="keydiv">
+          <div class="col-lg-12 mt-4 mt-lg-0 justify-content-center d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="box featured">
+              <h3>API KEY</h3>
+              <p><b>For security reasons, this key is generated once and is NOT stored on server<b>Save to access our apis</p>
+              <p id= "keytext"></p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+    
+
+{% endblock %}
+{% endblock %}

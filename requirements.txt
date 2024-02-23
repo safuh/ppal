@@ -1,0 +1,14 @@
+Django
+djangorestframework
+djangorestframework-api-key
+django-allauth
+googletrans==3.1.0a0
+sentencepiece
+sumy
+numpy
+language-tool-python
+psycopg2-binary
+whitenoise
+nltk
+gunicorn
+dj-database-url
